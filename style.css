@@ -74,25 +74,21 @@
     ;
 }
 
-.menu-item .font-awT {
-    color: ;
-}
-
 /* nav styles ends  */
 
 /* banner styles starts here */
+
 .banner-container {
     max-width: 1400px;
-    width: 100%;
     margin: 50px auto 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .banner-txt {
-    border: 1px solid red;
+    
     width: 50%;
     text-align: start;
     align-items: center;
@@ -110,8 +106,9 @@
 
 .banner-txt .banner-g {
     font-size: 60px;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 20px;
+    text-align: start;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -126,41 +123,46 @@
     text-transform: lowercase;
 }
 
-.btn-b {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-
-}
-
-.btn-b .btn-banner {
+.btn-banner {
     display: inline-flex;
-    padding: 21px 40px;
+    padding: 15px 35px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    overflow: hidden;
 }
 
-.btn-b .btn-banners {
-    display: inline-flex;
-    padding: 21px 40px;
+.btn-banners {
+    padding: 15px 35px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 48px;
     background: #4EC5F7;
+    overflow: hidden;
 }
 
+.banner-txt .btn {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
 
+}
 
-
+.banner-txt h3,
+p {
+    width: 100%;
+}
 
 .banner-img {
-    border: 1px solid red;
+    
     width: 50%;
-    height: 100%;
 }
 
+.banner-img img {
+    width: 100%;
+}
+/* banner purpose starts */
 
 
 
@@ -171,6 +173,7 @@
 
 
 
+/* responsive for mobile */
 @media screen and (max-width: 576px) {
     .nav-container {
         flex-direction: column;
@@ -186,18 +189,72 @@
         margin-bottom: 10px;
 
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column;
     }
-    .banner-img{
-        max-width: 200px ;
+    .banner-txt .banner-h{
+        font-size: 30px;
     }
-    .banner-txt, .banner-img{
-        width: ;
-        
+    .banner-txt .banner-g{
+        font-size: 30px;
     }
 
-    
+    .btn-banner {
+        padding: 5px 9px;
+    }
 
+
+    .btn-banners {
+        padding: 5px 5px;
+    }
 
 }
+/* responsive for mobile end */
+
+
+/* responsive for tablet starts*/
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .header-container {
+        text-align: center;
+    }
+
+    .nav-container {
+        flex-direction: column;
+
+
+    }
+
+    .logo-container img h3 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .menu-item a {
+        margin-bottom: 10px;
+
+    }
+
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-banner {
+        padding: 5px 9px;
+
+
+        .btn-banners {
+            padding: 5px 5px;
+        }
+
+
+    }
