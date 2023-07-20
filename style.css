@@ -25,7 +25,7 @@
     width: 50%;
     display: flex;
     align-items: center;
-    
+
 }
 
 .logo-container h {
@@ -89,12 +89,16 @@
 }
 
 .banner-txt {
-    
+
     width: 50%;
     text-align: start;
     align-items: center;
     text-align: start;
 
+}
+
+.banner-txt .font-i {
+    color: #FF42A5;
 }
 
 .banner-txt .banner-h {
@@ -156,78 +160,164 @@ p {
 }
 
 .banner-img {
-    
+
     width: 50%;
 }
 
 .banner-img img {
     width: 100%;
 }
+
 /* banner purpose starts */
 
-.banner-purpose-con{
+.banner-purpose-con {
     max-width: 1400px;
     margin: 50px auto 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.purpose-img{
+
+.purpose-img {
     width: 50%;
 }
-.purpose-img img{
+
+.purpose-img img {
     width: 100%;
 }
-.purpose-txt{
+
+.purpose-txt {
     width: 50%;
     text-align: end;
 }
-.purpose-p{
+
+.purpose-txt h3 {
     text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.purpose-btn{
+
+.purpose-p {
+    text-align: right;
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.purpose-btn {
     align-items: flex-end;
     justify-content: right;
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
 }
+
 /* purpose banner ends */
 
-.online-games{
+/* online games starts */
+.online-games {
     max-width: 1400px;
     margin: 50px auto 0;
     text-align: center;
 
-   
-    
+
+
 }
-.game-list{
+
+.shadow {
+    color: #0B0223;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.shadows {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.game-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    
-    
+
+
 }
-.online-games img{
+
+.online-games img {
     width: 98%;
 }
-.imgo, .imgt, .imgth, .imgf{
+
+.imgo,
+.imgt,
+.imgth,
+.imgf {
     width: ;
 }
+
 /* online games ends */
 
 /* aniversery starts */
-.aniversery{
+.aniversery {
     max-width: 1400px;
-    margin: 50px auto 0;
+    margin: 50px auto 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.aniver-txt, .aniver-img{
+.shadowx {
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.aniver-txt,
+.aniver-img {
     width: 50%;
 }
-.aniver-img img{
+
+.aniver-img img {
     width: 100%;
 }
+.img-relate{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.big {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .small {
+    position: absolute;
+    top: 500px;
+    right:480px;
+
+  }
 
 
 
@@ -239,7 +329,7 @@ p {
 
 
 /* footer starts */
-.footer{
+.footer {
     width: 100%;
     height: 400px;
     background-color: #0B0223;
@@ -248,19 +338,22 @@ p {
     align-items: center;
     padding-top: 100px;
 }
-.footers{
+
+.footers {
     max-width: 1400px;
     margin: 0 auto 0;
     color: #fff;
     width: 100%;
 }
-.footer-container{
+
+.footer-container {
     color: #fff;
     text-align: center;
     display: flex;
     justify-content: center;
 }
-.footer-item{
+
+.footer-item {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
@@ -269,7 +362,14 @@ p {
     color: #fff;
     padding-top: 50px;
 }
-.footer-items{
+.footer-icon{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    
+}
+
+.footer-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -278,12 +378,15 @@ p {
     align-items: center;
     color: #fff;
     padding-top: 50px;
+    max-width: 1400px;
 }
-.last{
+
+.last {
     font-size: x-small;
     padding-top: 30px;
 }
-.copyright{
+
+.copyright {
     display: grid;
     grid-template-columns: repeat(4, 0.5fr);
     font-size: x-small;
@@ -297,7 +400,9 @@ p {
 
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
-    .nav-container, .banner-purpose-con {
+
+    .nav-container,
+    .banner-purpose-con {
         flex-direction: column;
     }
 
@@ -315,13 +420,16 @@ p {
     .banner-container {
         flex-direction: column;
     }
-    .banner-img{
+
+    .banner-img {
         width: 100%;
     }
-    .banner-txt .banner-h{
+
+    .banner-txt .banner-h {
         font-size: 30px;
     }
-    .banner-txt .banner-g{
+
+    .banner-txt .banner-g {
         font-size: 30px;
     }
 
@@ -333,98 +441,157 @@ p {
     .btn-banners {
         padding: 5px 5px;
     }
-    .purpose-txt, .purpose-p{
+
+    .purpose-txt,
+    .purpose-p {
         width: 100%;
         text-align: center;
-        
+
     }
-    .purpose-img{
+
+    .purpose-img {
         width: 100%;
     }
-    .game-list{
+
+    .game-list {
         grid-template-columns: repeat(1, 1fr);
     }
-    .aniversery{
+
+    .aniversery {
         flex-direction: column;
+        margin: 50px auto 50px;
     }
-    .footer-item{
+    .aniver-txt{
+        text-align: center;
+        align-items: center;
+    }
+    .shadows, .shadowx{
+        font-size: 100%;
+    }
+
+
+    .footer-item {
         grid-template-columns: repeat(3, 1fr);
-       
+
     }
-    .footer-items{
+
+    .footer-items {
         grid-template-columns: repeat(2, 1fr);
-       
+
     }
-    ..copyright{
+
+    ..copyright {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .purpose-txt h3 {
+        text-align: center;
+    }
+    .small {
+        position: absolute;
+        top: 120px;
+        right:120px;
+    
+      }
+      .footer-icon{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    
+        
+    }
+
+
 }
+
 /* responsive for mobile end */
 
 
 /* responsive for tablet starts*/
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    .header-container,  {
-        text-align: center;
+
+    .header-container,
+    {
+    text-align: center;
+}
+
+.nav-container,
+.banner-purpose-con {
+    flex-direction: column;
+
+
+}
+
+.logo-container img h3 {
+    width: 100%;
+    flex-direction: column;
+}
+
+.menu-item {
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.menu-item a {
+    margin-bottom: 10px;
+
+}
+
+.banner-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-banner {
+    padding: 5px 9px;
+
+
+    .btn-banners {
+        padding: 5px 5px;
     }
 
-    .nav-container, .banner-purpose-con {
-        flex-direction: column;
+
+}
+
+.banner-img,
+.purpose-img {
+    width: 100%;
+}
+
+.purpose-txt,
+.purpose-p {
+    width: 100%;
+    text-align: center;
+
+}
+
+.game-list {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.aniversery {
+    flex-direction: column;
+    text-align: center;
+}
+
+.aniver-img img {
+    width: 100%;
+}
+
+.purpose-txt h3 {
+    text-align: center;
+}
+.small {
+    position: absolute;
+    top: 270px;
+    right:270px;
+
+  }
 
 
-    }
-
-    .logo-container img h3 {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .menu-item {
-        width: 100%;
-        flex-direction: column;
-
-    }
-
-    .menu-item a {
-        margin-bottom: 10px;
-
-    }
-
-    .banner-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .btn-banner {
-        padding: 5px 9px;
 
 
-        .btn-banners {
-            padding: 5px 5px;
-        }
-
-
-    }
-    .banner-img, .purpose-img{
-        width: 100%;
-    }
-
-    .purpose-txt, .purpose-p{
-        width: 100%;
-        text-align: center;
-        
-    }
-    .game-list{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .aniversery{
-        flex-direction: column;
-        text-align: center;
-    }
-    .aniver-img img{
-        width: 100%;
-    }
-
+}
