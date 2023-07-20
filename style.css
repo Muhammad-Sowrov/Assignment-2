@@ -270,9 +270,13 @@ p {
 .imgo,
 .imgt,
 .imgth,
-.imgf {
-    width: ;
-}
+.imgf {}
+
+.imgo,
+.imgt,
+.imgth,
+.imgf:hover {}
+
 
 /* online games ends */
 
@@ -284,6 +288,7 @@ p {
     justify-content: space-between;
     align-items: center;
 }
+
 .shadowx {
     color: #0B0223;
     font-family: Work Sans;
@@ -301,29 +306,75 @@ p {
 .aniver-img img {
     width: 100%;
 }
-.img-relate{
+
+.img-relate {
     position: relative;
     top: 0;
     left: 0;
 }
+
 .big {
     position: relative;
     top: 0;
     left: 0;
-  }
-  
-  .small {
+}
+
+.small {
     position: absolute;
     top: 500px;
-    right:480px;
+    right: 480px;
 
-  }
+}
 
 
 
 /* aniversery end */
+/* list of games  */
 
 
+
+
+
+
+/* list of games end*/
+.list-games {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.games-container {
+    max-width: 1400px;
+    margin: 50px auto 0;
+}
+
+.games-container .first-game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.games-container .second-game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+}
+
+.games-container .first-game .one,
+.two {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.one:hover{
+    border: 1px solid #FF42A5;
+    border-radius: 20px;
+    color: #F61C0D;
+}
+.two:hover{
+    border: 1px solid #FF42A5;
+    border-radius: 20px;
+    color: #F61C0D;
+}
 
 
 
@@ -333,7 +384,6 @@ p {
     width: 100%;
     height: 400px;
     background-color: #0B0223;
-    border: 1px solid red;
     text-align: center;
     align-items: center;
     padding-top: 100px;
@@ -362,11 +412,12 @@ p {
     color: #fff;
     padding-top: 50px;
 }
-.footer-icon{
+
+.footer-icon {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 
-    
+
 }
 
 .footer-items {
@@ -461,11 +512,14 @@ p {
         flex-direction: column;
         margin: 50px auto 50px;
     }
-    .aniver-txt{
+
+    .aniver-txt {
         text-align: center;
         align-items: center;
     }
-    .shadows, .shadowx{
+
+    .shadows,
+    .shadowx {
         font-size: 100%;
     }
 
@@ -488,17 +542,31 @@ p {
     .purpose-txt h3 {
         text-align: center;
     }
+
     .small {
         position: absolute;
         top: 120px;
-        right:120px;
-    
-      }
-      .footer-icon{
+        right: 120px;
+
+    }
+
+    .footer-icon {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+
+
+    }
+
+
+    .games-container .first-game {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
     
-        
+    .games-container .second-game {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5px;
+        width: 100%;
     }
 
 
@@ -584,12 +652,13 @@ p {
 .purpose-txt h3 {
     text-align: center;
 }
+
 .small {
     position: absolute;
     top: 270px;
-    right:270px;
+    right: 270px;
 
-  }
+}
 
 
 
