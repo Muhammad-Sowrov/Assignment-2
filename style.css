@@ -345,7 +345,7 @@ p {
 
 .games-container {
     max-width: 1400px;
-    margin: 50px auto 0;
+    margin: 50px auto 50px;
 }
 
 .games-container .first-game {
